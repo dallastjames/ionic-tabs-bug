@@ -17,6 +17,12 @@
   <ion-list>
     <ion-item *ngFor="let c of content; let idx = index;">
       {{idx + 1}}: {{ c }}
+      <!-- Comment out the icon below and build to an iOS device
+      (must run on a device) and the scrolling will work correctly. Uncomment
+      the icon, and the page will no longer scroll down to the bottom, but will
+      stop short. Navigating away from this tab and back again will correct
+      the scrolling issue -->
+      <ion-icon name="close-circle" slot="end"></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>
